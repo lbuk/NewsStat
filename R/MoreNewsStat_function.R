@@ -1,6 +1,6 @@
-#' NewsStat
+#’ MoreNewsStat
 #'
-#' NewsStat allows you to extract key statistics from a range of online content such as news, websites and blogs.
+#' MoreNewsStat is an extension of NewsStat - allowing you to extract more stats from more news.
 #' @param doc_html input query string
 #' @keywords
 #' News
@@ -8,18 +8,18 @@
 #' Statistics
 #' @export
 #' @examples
-#' NewsStat()
-#' NewsStat("http://www.digitaltrends.com/business/equal-pay-pledge-tech/")
-NewsStat <- function(doc_html) {
-  require(RCurl)
-  require(XML)
-  require(stringr)
+#' MoreNewsStat()
+#' MoreNewsStat("https://www.theguardian.com/world/2016/sep/13/new-data-points-to-major-eruption-of-japanese-volcano")
+
+MoreNewsStat <- function(doc_html) {
   
   # Parse the URL
+  doc_html <- getURL(doc_html)
+  
   doc_html <- htmlTreeParse(doc_html, useInternal = TRUE)
   
   # Clean unstructured text
-  news_text <- unlist(xpathApply(doc_html, "(//p)|(//ul)", xmlValue))
+  news_text <- unlist(xpathApply(doc_html, "//p", xmlValue))
   news_text <- gsub('\\n', ' ', news_text)
   news_text <- paste(news_text, collapse = ' ')
   
@@ -32,10 +32,10 @@ NewsStat <- function(doc_html) {
                     (rate)|(skew)|(statistic)|(standard deviation)|(statistical model)|
                     (statistical significance)|(statistically significant)|(survey)|
                     (trend)")
-  
-  # Separate sentences in text
-  sentences <- unlist(strsplit(news_text,split="\\. "))
-  
-  sentences[grep(stat_insights, sentences)]
-  
-}
+    
+    # Separate sentences in text
+    sentences <- unlist(strsplit(news_text,split="\\. "))
+    
+    sentences[grep(stat_insights, sentences)]
+    
+  }
