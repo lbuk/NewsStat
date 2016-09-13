@@ -1,7 +1,7 @@
 # NewsStat
 
 ## What is it?
-NewsStat is an R package that allows you to extract text containing statistics from online content such as news, websites and blogs. Simply enter a URL and NewsStat will return sentences containing key stats including, but not limited to: percentages, use of data and references to outliers.
+NewsStat is an R package that allows you to extract text containing statistics from online news. Simply enter a URL and NewsStat will return sentences containing key stats including, but not limited to: percentages, use of data and references to outliers.
 
 ## Install
 ```
@@ -17,6 +17,9 @@ Note: NewsStat requires an R version >= 3.2.3
 Select your URL, add a "" between and precede with NewsStat(). Below you'll find an example.
 ```
 NewsStat("http://www.digitaltrends.com/business/equal-pay-pledge-tech/")
+```
+```
+NewsStat("NewsStat("http://uk.reuters.com/article/us-usa-stocks-idUKKCN11J19G")
 ```
 ## What can I use NewsStat for?
 Whether you're working in news, finance, policy or just an interested reader, statistics are an important part of life. However, looking for statistics in text can be a difficult and arduous task. NewsStat can make your life easier by quickly extracting key statistics from the web. For example, if you're looking to find statistics from a financial news story or a favourite blog, NewsStat can quickly find and extract those key insights. 
