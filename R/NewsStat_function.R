@@ -14,9 +14,8 @@ NewsStat <- function(doc_html) {
   require(RCurl)
   require(XML)
   require(stringr)
-  # Parse the URL
-  doc_html <- getURL(doc_html)
   
+  # Parse the URL
   doc_html <- htmlTreeParse(doc_html, useInternal = TRUE)
   
   # Clean unstructured text
