@@ -14,7 +14,10 @@ library(NewsStat)
 Note: NewsStat requires an R version >= 3.2.3
 
 ## How do I use it?
-Install the packages using the code above, select your URL. Below you'll find an example.
+Install the packages using the code above, select your URL. Below you'll find a few  examples.
+```
+NewsStat("http://www.bbc.co.uk/news/uk-37345436")
+```
 ```
 NewsStat("http://www.digitaltrends.com/business/equal-pay-pledge-tech/")
 ```
