@@ -19,7 +19,7 @@ NewsStat <- function(doc_html) {
   doc_html <- htmlTreeParse(doc_html, useInternal = TRUE)
   
   # Clean unstructured text
-  news_text <- unlist(xpathApply(doc_html, "(//p)|(//ul)", xmlValue))
+  news_text <- unlist(xpathApply(doc_html, "//p", xmlValue))
   news_text <- gsub('\\n', ' ', news_text)
   news_text <- paste(news_text, collapse = ' ')
   
