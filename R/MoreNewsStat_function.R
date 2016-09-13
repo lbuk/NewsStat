@@ -11,7 +11,7 @@
 #' MoreNewsStat()
 #' MoreNewsStat("https://www.theguardian.com/world/2016/sep/13/new-data-points-to-major-eruption-of-japanese-volcano")
 
-More_NewsStat <- function(doc_html) {
+MoreNewsStat <- function(doc_html) {
   
   # Parse the URL
   doc_html <- getURL(doc_html)
