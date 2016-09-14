@@ -10,7 +10,7 @@ NewsStat(doc_html)
 \item{doc_html}{input query string}
 }
 \description{
-NewsStat allows you to extract key statistics from a range of online content such as news, websites and blogs.
+NewsStat allows you to extract key statistics from online news.
 }
 \examples{
 NewsStat()

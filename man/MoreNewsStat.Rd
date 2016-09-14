@@ -14,7 +14,7 @@ MoreNewsStat is an extension of NewsStat - allowing you to extract more stats fr
 }
 \examples{
 MoreNewsStat()
-MoreNewsStat("https://www.theguardian.com/world/2016/sep/13/new-data-points-to-major-eruption-of-japanese-volcano")
+MoreNewsStat("https://www.theguardian.com/small-business-network/2016/aug/16/how-the-ordnance-survey-is-mapping-out-a-future-for-geotech")
 }
 \keyword{News}
 \keyword{Statistics}
