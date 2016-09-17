@@ -37,7 +37,7 @@ MoreNewsStat <- function(doc_html) {
                     (outlier)|(probability)|(p-value)|(pattern)|
                     (rate)|(skew)|(statistic)|(standard deviation)|(statistical model)|
                     (statistical significance)|(statistically significant)|(survey)|
-                    (trend)")
+                    (trend)|(1)|(2)|(3)|(4)|(5)|(6)|(7)|(8)|(9)|(0)")
 
     # Separate sentences in text
     sentences <- unlist(strsplit(news_text,split="\\. "))
