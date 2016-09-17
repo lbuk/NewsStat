@@ -33,6 +33,20 @@ If your URL begins with "https" rather than "http" then different rules apply. S
 ```
 MoreNewsStat("https://www.theguardian.com/business/2016/sep/04/morrisons-cut-food-prices-12-percent-uk-deflation")
 ```
+## Running NewsStat in Python
+If you'd rather use Python, run the code below:
+```
+import urllib2
+from rpy2.robjects.packages import SignatureTranslatedAnonymousPackage
+
+NewsStat_URL = urllib2.urlopen('https://raw.githubusercontent.com/lbuk/NewsStat_Test_Functions/master/R/NewsStat_function.R')
+string = ''.join(NewsStat_URL.readlines())
+NewsStat = SignatureTranslatedAnonymousPackage(string, "NewsStat")
+
+MoreNewsStat_URL = urllib2.urlopen('https://raw.githubusercontent.com/lbuk/NewsStat_Test_Functions/master/R/MoreNewsStat_function.R')
+more_string = ''.join(MoreNewsStat_URL.readlines())
+MoreNewsStat = SignatureTranslatedAnonymousPackage(more_string, "MoreNewsStat")
+```
 ## What can I use NewsStat for?
 Looking for statistics in text can be a difficult and arduous task. NewsStat can make your life easier by quickly extracting key statistics from online news content. For example, if you're looking to find statistics from financial news or the latest political stories, NewsStat can quickly find and extract those key insights. You can use NewsStat for blogs, websites and other non-news as well. It was built following a project undertaken as part of a Google Fellowship at BBC News Labs.
 
