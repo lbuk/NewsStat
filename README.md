@@ -49,7 +49,6 @@ import rpy2.robjects.packages as rpackages
 from rpy2.robjects.packages import importr
 from rpy2.robjects.packages import SignatureTranslatedAnonymousPackage
 
-utils = rpackages.importr('utils')
 packnames = ('RCurl', 'stringr', 'XML')
 from rpy2.robjects.vectors import StrVector
 utils.install_packages(StrVector(packnames))
