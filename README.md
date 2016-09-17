@@ -46,7 +46,9 @@ pip install rpy2
 import rpy2
 
 from rpy2.robjects.packages import importr
+
 import rpy2.robjects.packages as rpackages
+utils = rpackages.importr('utils')
 packnames = ('RCurl', 'stringr', 'XML')
 from rpy2.robjects.vectors import StrVector
 utils.install_packages(StrVector(packnames))
