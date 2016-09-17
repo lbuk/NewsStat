@@ -48,10 +48,8 @@ import rpy2
 from rpy2.robjects.packages import importr
 
 import rpy2.robjects.packages as rpackages
-utils = rpackages.importr('utils')
 packnames = ('RCurl', 'stringr', 'XML')
 from rpy2.robjects.vectors import StrVector
-utils.install_packages(StrVector(packnames))
 
 import urllib2
 from rpy2.robjects.packages import SignatureTranslatedAnonymousPackage
@@ -59,10 +57,12 @@ from rpy2.robjects.packages import SignatureTranslatedAnonymousPackage
 NewsStat_URL = urllib2.urlopen('https://raw.githubusercontent.com/lbuk/NewsStat_Test_Functions/master/R/NewsStat_function.R')
 string = ''.join(NewsStat_URL.readlines())
 NewsStat = SignatureTranslatedAnonymousPackage(string, "NewsStat")
+NewsStat.install_packages(StrVector(packnames))
 
 MoreNewsStat_URL = urllib2.urlopen('https://raw.githubusercontent.com/lbuk/NewsStat_Test_Functions/master/R/MoreNewsStat_function.R')
 more_string = ''.join(MoreNewsStat_URL.readlines())
 MoreNewsStat = SignatureTranslatedAnonymousPackage(more_string, "MoreNewsStat")
+MoreNewsStat.install_packages(StrVector(packnames))
 ```
 
 ## License
