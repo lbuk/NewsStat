@@ -2,7 +2,7 @@
 % Please edit documentation in R/MoreNewsStat_function.R
 \name{MoreNewsStat}
 \alias{MoreNewsStat}
-\title{MoreNewsStat is an extension of NewsStat - allowing you to extract more stats from more news.}
+\title{MoreNewsStat allows you to extract more stats from more news.}
 \usage{
 MoreNewsStat(doc_html)
 }
@@ -10,7 +10,7 @@ MoreNewsStat(doc_html)
 \item{doc_html}{input query string}
 }
 \description{
-MoreNewsStat is an extension of NewsStat - allowing you to extract more stats from more news.
+MoreNewsStat allows you to extract more stats from more news.
 }
 \examples{
 MoreNewsStat()

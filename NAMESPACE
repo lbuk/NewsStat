@@ -2,3 +2,6 @@
 
 export(MoreNewsStat)
 export(NewsStat)
+import(RCurl)
+import(XML)
+import(stringr)

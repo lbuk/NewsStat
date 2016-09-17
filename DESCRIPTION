@@ -4,10 +4,7 @@ Version: 0.0.0.9000
 Authors@R: person("Liam", "Bolton", email = "liamthomasbolton@gmail.com", role = c("aut", "cre"))
 Description: NewsStat allows you to extract text containing statistics from online 	news content. It was originally intended solely 	for news organisations but it can be used by anyone to extract stats from 	the web. Simply enter a URL and NewsStat will return sentences containing 	key stats including, but not limited to: percentages, use of data and 		references to outliers.
 Depends: R (>= 3.2.3)
-Imports:
-	RCurl,
-	XML,
-	stringr
+Imports: RCurl, stringr, XML
 License: Apache License
 Encoding: UTF-8
 LazyData: true
