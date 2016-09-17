@@ -42,13 +42,14 @@ The package does not extract data visualisations, tables or other unsupported fo
 ## Running NewsStat in Python
 If you'd rather use Python, try:
 ```
+pip install rpy2
+
 import rpy2
-import rpy2.robjects
 import urllib2
-import rpy2.robjects.packages as rpackages
 from rpy2.robjects.packages import importr
 from rpy2.robjects.packages import SignatureTranslatedAnonymousPackage
 
+import rpy2.robjects.packages as rpackages
 packnames = ('RCurl', 'stringr', 'XML')
 from rpy2.robjects.vectors import StrVector
 utils.install_packages(StrVector(packnames))
