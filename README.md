@@ -1,7 +1,7 @@
 # NewsStat
 
 ## What is it?
-NewsStat is an R package that allows you to extract text containing statistics from online news. Simply enter a URL and NewsStat will return sentences containing key stats including, but not limited to: percentages, use of data and references to outliers. It can also be used to extract stats from websites and blogs. NewsStat is a work in progress - feel free to contribute, build on it and let me know if there are any issues.
+NewsStat is an R package and set of functions that allow you to extract text containing statistics from online news. Simply enter a URL and NewsStat will return sentences containing key stats including, but not limited to: percentages, use of data and references to outliers. It can also be used to extract stats from websites and blogs. NewsStat is a work in progress - feel free to contribute, build on it and let me know if there are any issues.
 
 ## Install
 To install and use NewsStat, please use the code provided below. Note: NewsStat requires an R version >= 3.2.3 so you may need to [update your version](http://bioinfo.umassmed.edu/bootstrappers/bootstrappers-courses/courses/rCourse/Additional_Resources/Updating_R.html).
