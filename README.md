@@ -43,16 +43,16 @@ The package does not extract data visualisations, tables or other unsupported fo
 If you'd rather use Python, try:
 ```
 pip install rpy2
-
 import rpy2
-import urllib2
-from rpy2.robjects.packages import importr
-from rpy2.robjects.packages import SignatureTranslatedAnonymousPackage
 
+from rpy2.robjects.packages import importr
 import rpy2.robjects.packages as rpackages
 packnames = ('RCurl', 'stringr', 'XML')
 from rpy2.robjects.vectors import StrVector
 utils.install_packages(StrVector(packnames))
+
+import urllib2
+from rpy2.robjects.packages import SignatureTranslatedAnonymousPackage
 
 NewsStat_URL = urllib2.urlopen('https://raw.githubusercontent.com/lbuk/NewsStat_Test_Functions/master/R/NewsStat_function.R')
 string = ''.join(NewsStat_URL.readlines())
