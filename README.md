@@ -36,6 +36,7 @@ MoreNewsStat("https://www.theguardian.com/business/2016/sep/04/morrisons-cut-foo
 ## Running NewsStat in Python
 If you'd rather use Python, run the code below:
 ```
+import rpy2
 import urllib2
 from rpy2.robjects.packages import SignatureTranslatedAnonymousPackage
 
