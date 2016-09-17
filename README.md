@@ -40,6 +40,7 @@ import rpy2
 import rpy2.robjects
 import urllib2
 from rpy2.robjects.packages import SignatureTranslatedAnonymousPackage
+from rpy2.robjects.packages import importr
 
 NewsStat_URL = urllib2.urlopen('https://raw.githubusercontent.com/lbuk/NewsStat_Test_Functions/master/R/NewsStat_function.R')
 string = ''.join(NewsStat_URL.readlines())
