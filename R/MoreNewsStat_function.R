@@ -15,6 +15,10 @@
 
 MoreNewsStat <- function(doc_html) {
 
+  require(RCurl)
+  require(stringr)
+  require(XML)
+
   # Parse the URL
   doc_html <- getURL(doc_html)
 
