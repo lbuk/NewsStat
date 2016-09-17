@@ -41,5 +41,5 @@ The package does not extract data visualisations, tables or other unsupported fo
 
 ## License
 Copyright 2016 Liam Bolton.
-Licensed under the Apache License, Version 2.0 (the "License");
+Licensed under the [Apache License](https://github.com/lbuk/NewsStat_Test_Functions/blob/master/LICENSE), Version 2.0 (the "License");
 you may not use this except in compliance with the License.
