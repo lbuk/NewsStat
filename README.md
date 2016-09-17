@@ -14,8 +14,8 @@ library(NewsStat)
 ```
 Alternatively, if there are any issues then running these two lines of code will do the trick:
 ```
-devtools::source_url('https://raw.githubusercontent.com/lbuk/NewsStat/master/R/NewsStat_function.R')
-devtools::source_url('https://raw.githubusercontent.com/lbuk/NewsStat/master/R/MoreNewsStat_function.R')
+devtools::source_url('https://raw.githubusercontent.com/lbuk/NewsStat_Functions/master/R/NewsStat_function.R')
+devtools::source_url('https://raw.githubusercontent.com/lbuk/NewsStat_Functions/master/R/MoreNewsStat_function.R')
 ```
 ## How do I use it?
 Install using the code above and select your URL. Here are a few  example inputs:
