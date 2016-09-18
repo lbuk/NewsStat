@@ -34,7 +34,7 @@ If your URL begins with "https" rather than "http" then different rules apply. S
 MoreNewsStat("https://www.theguardian.com/business/2016/sep/04/morrisons-cut-food-prices-12-percent-uk-deflation")
 ```
 ## What can I use NewsStat for?
-Looking for statistics in text can be a difficult and arduous task. NewsStat can make your life easier by quickly extracting key statistics from online news content. For example, if you're looking to find statistics from financial news or the latest political stories, NewsStat can quickly find and extract those key insights. You can use NewsStat for blogs, websites and other non-news as well. It was built following a text analytics project undertaken as part of a Google Fellowship at BBC News Labs.
+Looking for statistics in text can be a difficult and arduous task. NewsStat can make your life easier by quickly extracting key statistics from online news content. For example, if you're looking to find statistics from financial news or the latest political stories, NewsStat can quickly find and extract those key insights. You can use NewsStat for blogs, websites and other non-news sites as well. It was built in the months following a Google Fellowship at BBC News Labs.
 
 ## What can't I use it for?
 The package does not extract data visualisations, tables or other unsupported formats. It is best used for extracting stats from paragraphs in text. You won't be able to use NewsStat if the news is behind a paywall.
