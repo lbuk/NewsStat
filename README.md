@@ -37,7 +37,7 @@ MoreNewsStat("https://www.theguardian.com/business/2016/sep/04/morrisons-cut-foo
 Looking for statistics in text can be a difficult and arduous task. NewsStat can make your life easier by quickly extracting key statistics from online news content. For example, if you're looking to find statistics from financial news or the latest political stories, NewsStat can quickly find and extract those key insights. You can use NewsStat for blogs, websites and other non-news sites as well. It was built following a 2016 Google Fellowship at BBC News Labs.
 
 ## What can't I use it for?
-The package does not extract data visualisations, tables or other unsupported formats. It is best used for extracting stats from paragraphs in text. You won't be able to use NewsStat on news that's behind a paywall. If the news content is behind any kind of paywall (including the FT, NYT and The WSJ) then it will spit back the URL. 
+The package does not extract data visualisations, tables or other unsupported formats. It is best used for extracting stats from paragraphs in text. You won't be able to use NewsStat on news that's behind a paywall. If the news content is behind any kind of paywall (including the NYT) then it will spit back the URL. 
 
 ## Running NewsStat in Python
 If you'd rather use Python, try the code below:
