@@ -39,23 +39,6 @@ Looking for statistics in text can be a difficult and arduous task. NewsStat can
 ## What can't I use it for?
 The package does not extract data visualisations, tables or other unsupported formats. It is best used for extracting stats from paragraphs in text. Bear in mind - you won't be able to use the package on news that's behind a paywall. If the news content is behind or linked to a paywall then in most cases it will return an error. 
 
-## Running NewsStat in Python
-If you'd rather use Python, try the code below:
-```
-import rpy2
-import urllib2
-
-from rpy2.robjects.packages import SignatureTranslatedAnonymousPackage
-
-NewsStat_URL = urllib2.urlopen('https://raw.githubusercontent.com/lbuk/NewsStat_Test_Functions/master/R/NewsStat_function.R')
-string = ''.join(NewsStat_URL.readlines())
-NewsStat = SignatureTranslatedAnonymousPackage(string, "NewsStat")
-
-MoreNewsStat_URL = urllib2.urlopen('https://raw.githubusercontent.com/lbuk/NewsStat_Test_Functions/master/R/MoreNewsStat_function.R')
-more_string = ''.join(MoreNewsStat_URL.readlines())
-MoreNewsStat = SignatureTranslatedAnonymousPackage(more_string, "MoreNewsStat")
-```
-
 ## License
 Copyright 2016 Liam Bolton
 
