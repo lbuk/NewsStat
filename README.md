@@ -1,10 +1,10 @@
 # NewsStat
 
 ## What is it?
-NewsStat is an R package that allows you to extract text containing statistics from online news. Simply enter a URL and NewsStat will return sentences containing key stats including, but not limited to: percentages, use of data and references to outliers. It can also be used to extract stats from non-news sites such as websites and blogs. NewsStat is a work in progress - feel free to contribute, build on it and let me know if there are any issues.
+NewsStat is a mini R package that allows you to extract text containing statistics from online news. Simply enter a URL and NewsStat will return sentences containing key stats including, but not limited to: percentages, use of data and references to outliers. It can also be used to extract stats from non-news sites such as websites and blogs. NewsStat is a work in progress - feel free to contribute, build on it and let me know if there are any issues.
 
 ## Install
-To install and use NewsStat, use the code provided below. Note: NewsStat requires an R version >= 3.2.3 so you may need to [update your version](http://bioinfo.umassmed.edu/bootstrappers/bootstrappers-courses/courses/rCourse/Additional_Resources/Updating_R.html).
+To install NewsStat, use the code provided below. Note: NewsStat requires an R version >= 3.2.3 so you may need to [update your version](http://bioinfo.umassmed.edu/bootstrappers/bootstrappers-courses/courses/rCourse/Additional_Resources/Updating_R.html) of R or R Studio.
 ```
 install.packages("devtools")
 library("devtools")
@@ -12,13 +12,13 @@ library("devtools")
 devtools::install_github("lbuk/NewsStat")
 library(NewsStat)
 ```
-Alternatively, if there are any issues then running these two lines of code will do the trick:
+Alternatively, if there are any issues then running these two lines of code will do the trick once you've installed devtools:
 ```
 devtools::source_url('https://raw.githubusercontent.com/lbuk/NewsStat_Test_Functions/master/R/NewsStat_function.R')
 devtools::source_url('https://raw.githubusercontent.com/lbuk/NewsStat_Test_Functions/master/R/MoreNewsStat_function.R')
 ```
 ## How do I use it?
-Install using the code above and select your URL. Here are a few example inputs:
+Install using the code above and copy your URL. Here are a few example usages:
 ```
 NewsStat("http://www.bbc.co.uk/news/uk-37345436")
 ```
@@ -40,7 +40,7 @@ Looking for statistics in text can be a difficult and arduous task. NewsStat can
 The package does not extract data visualisations, tables or other unsupported formats. It is best used for extracting stats from paragraphs in text. Bear in mind - you won't be able to use the package on news that's behind a paywall. If the news content is behind or linked to a paywall then in most cases it will return an error. 
 
 ## License
-Copyright 2016 Liam Bolton
+Copyright 2016 L. Bolton
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
