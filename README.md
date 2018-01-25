@@ -1,24 +1,23 @@
 # NewsStat
 
 ## What is it?
-NewsStat is a small R package that allows you to extract text containing statistics from online news. Simply enter a URL and NewsStat will return sentences containing key stats including, but not limited to: percentages, use of data and references to outliers. It can also be used to extract stats from non-news sites such as websites and blogs. NewsStat is a work in progress - feel free to contribute, build on it and let me know if there are any issues.
+NewsStat is a set of functions that allow you to extract text containing statistics from online news. Simply enter a URL and NewsStat will return sentences containing key stats including, but not limited to: percentages, use of data and references to outliers. It can also be used to extract stats from non-news sites such as websites and blogs. NewsStat is a work in progress - feel free to contribute, build on it and let me know if there are any issues.
 
 ## Install
-To install NewsStat, use the code provided below. Note: NewsStat requires an R version >= 3.2.3 so you may need to [update your version](http://bioinfo.umassmed.edu/bootstrappers/bootstrappers-courses/courses/rCourse/Additional_Resources/Updating_R.html) of R or R Studio.
+To use NewsStat, run the code provided below. Note: NewsStat requires an R version >= 3.2.3 so you may need to [update your version](http://bioinfo.umassmed.edu/bootstrappers/bootstrappers-courses/courses/rCourse/Additional_Resources/Updating_R.html) of R or R Studio.
+
 ```
 install.packages("devtools")
 library("devtools")
-
-devtools::install_github("lbuk/NewsStat")
-library(NewsStat)
 ```
-Alternatively, if there are any issues then running these two lines of code will do the trick once you've installed devtools:
+
 ```
 devtools::source_url('https://raw.githubusercontent.com/lbuk/NewsStat_Test_Functions/master/R/NewsStat_function.R')
 devtools::source_url('https://raw.githubusercontent.com/lbuk/NewsStat_Test_Functions/master/R/MoreNewsStat_function.R')
 ```
+
 ## How do I use it?
-Install using the code above and copy your URL. Here are a few example usages:
+Install using the code above and copy your URL. Here are a few example uses:
 ```
 NewsStat("http://www.bbc.co.uk/news/uk-37345436")
 ```
@@ -28,6 +27,7 @@ NewsStat("http://www.digitaltrends.com/business/equal-pay-pledge-tech/")
 ```
 NewsStat("http://uk.reuters.com/article/us-usa-stocks-idUKKCN11J19G")
 ```
+
 ### MoreNewsStat
 If your URL begins with "https" rather than "http" then different rules apply. Some sites - The Guardian, The Washington Post and Buzzfeed - publish their content with a secure "https". This is where MoreNewsStat comes in. It works in much the same way as NewsStat:
 ```
