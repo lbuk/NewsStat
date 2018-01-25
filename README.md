@@ -12,8 +12,8 @@ library("devtools")
 ```
 
 ```
-devtools::source_url('https://raw.githubusercontent.com/lbuk/NewsStat_Test_Functions/master/R/NewsStat_function.R')
-devtools::source_url('https://raw.githubusercontent.com/lbuk/NewsStat_Test_Functions/master/R/MoreNewsStat_function.R')
+devtools::source_url('https://raw.githubusercontent.com/lbuk/NewsStat/master/R/NewsStat_function.R')
+devtools::source_url('https://raw.githubusercontent.com/lbuk/NewsStat/master/R/MoreNewsStat_function.R')
 ```
 
 ## How do I use it?
