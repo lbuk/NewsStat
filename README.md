@@ -40,7 +40,7 @@ Looking for statistics in text can be a difficult and arduous task. NewsStat can
 The package does not extract data visualisations, tables or other unsupported formats. It is best used for extracting stats from text. Bear in mind - you won't be able to use the package on news that's behind a paywall. If the news content is behind or linked to a paywall then in most cases it will return an error. 
 
 ## License
-Copyright 2016 L. Bolton
+MIT License. Copyright 2016 L. Bolton
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
