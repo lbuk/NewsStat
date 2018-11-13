@@ -13,7 +13,6 @@ library("devtools")
 
 ```
 devtools::source_url('https://raw.githubusercontent.com/lbuk/NewsStat/master/NewsStat_function.R')
-devtools::source_url('https://raw.githubusercontent.com/lbuk/NewsStat/master/MoreNewsStat_function.R')
 ```
 
 ## How do I use it?
@@ -28,10 +27,8 @@ NewsStat("http://www.digitaltrends.com/business/equal-pay-pledge-tech/")
 NewsStat("http://uk.reuters.com/article/us-usa-stocks-idUKKCN11J19G")
 ```
 
-### MoreNewsStat
-If your URL begins with "https" rather than "http" then different rules apply. Some sites - The Guardian, The Washington Post and Buzzfeed - publish their content with a secure "https". This is where MoreNewsStat comes in. It works in much the same way as NewsStat:
 ```
-MoreNewsStat("https://www.theguardian.com/business/2016/sep/04/morrisons-cut-food-prices-12-percent-uk-deflation")
+NewsStat("https://www.theguardian.com/business/2016/sep/04/morrisons-cut-food-prices-12-percent-uk-deflation")
 ```
 ## What can I use NewsStat for?
 Looking for statistics in text can be a difficult and arduous task. NewsStat can make your life easier by quickly extracting key statistics from online news content. For example, if you're looking to find statistics from financial news or the latest political stories, NewsStat can quickly find and extract those key insights. You can use NewsStat for blogs, websites and other non-news sites as well. It is part of a handful of small tools - including [SimText](https://github.com/lbuk/simtext_function) and [StatIndex](https://github.com/lbuk/StatIndex) - that I created following a 2016 Google Fellowship at BBC News Labs to help the public and journalists mine online news text.
