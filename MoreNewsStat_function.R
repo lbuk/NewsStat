@@ -1,4 +1,4 @@
-MoreNewsStat <- function(doc_html) {
+NewsStat <- function(doc_html) {
 
   require(RCurl)
   require(stringr)
