@@ -1,7 +1,7 @@
 # NewsStat
 
 ## What is it?
-NewsStat is a set of functions that allow you to extract text containing statistics from online news. Simply enter a URL and NewsStat will return sentences containing key stats including, but not limited to: percentages, use of data and references to outliers. It can also be used to extract stats from non-news sites such as blogs. NewsStat is a work in progress - feel free to contribute, build on it and let me know if there are any issues.
+NewsStat is a set of functions that allow you to extract text containing statistics from online news. Simply enter a URL and NewsStat will return sentences containing key stats including, but not limited to: percentages, use of data and references to outliers. It can also be used to extract stats from non-news sites such as blogs.
 
 ## Install
 To install NewsStat, run the code provided below. 
