@@ -1,9 +1,9 @@
 # NewsStat
 
 ## What is it?
-NewsStat is an R function that allow you to extract text containing statistics from online news. Simply enter a URL and NewsStat will extract sentences containing statistical text. It can also be used to extract stats from non-news sites such as blogs. 
+NewsStat is an R function that allow you to extract text containing statistics and numbers from online news. Simply enter a URL and NewsStat will extract sentences containing statistical text. It can also be used to extract stats from non-news sites. 
 
-Note: NewsStat is an experimental tool that may not work if the website has a paywall.
+Note: NewsStat is an experimental tool that won't work if the website has a paywall, for example.
 
 ## Install
 To install NewsStat, run the code provided below. 
@@ -25,7 +25,7 @@ NewsStat("https://www.theplanner.co.uk/news/%E2%80%98affordable-housing%E2%80%99
 ```
 
 ## What can I use NewsStat for?
-NewsStat is an R function that can be used to extract statistial text from webpages. It is an experimental tools that was created as part of a 2016 Google Fellowship at BBC News Labs to help the public and journalists mine online news text.
+NewsStat is an experimental R function that can be used to extract statistial text from webpages. It is an experimental tool that was created as part of a 2016 Google Fellowship at BBC News Labs to help the public and journalists mine online news text.
 
 ## What can't I use it for?
-The package does not extract data visualisations, tables or other unsupported formats. It is best used for extracting stats after reading the text. You won't be able to use the function on pages that are behind a paywall.
+The package does not extract data visualisations, tables or other unsupported formats. It is best used for extracting stats after reading the text. You won't be able to use the function on pages that are behind a paywall, for example.
