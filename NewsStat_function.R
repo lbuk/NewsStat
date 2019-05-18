@@ -7,7 +7,7 @@ NewsStat <- function(doc_html) {
   # Parse the URL
   doc_html <- getURL(doc_html, followlocation = TRUE)
 
-  doc_html <- htmlParse(html, asText=TRUE)
+  doc_html <- htmlParse(doc_html, asText=TRUE)
 
   # Clean unstructured text
   news_text <- unlist(xpathApply(doc_html, "//p", xmlValue))
