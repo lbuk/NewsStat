@@ -10,9 +10,7 @@ NewsStat <- function(doc_html) {
   doc_html <- htmlParse(doc_html, asText=TRUE)
 
   # Clean unstructured text
-  news_text <- unlist(xpathApply(doc_html, "//p", xmlValue))
-  news_text <- gsub('\\n', ' ', news_text)
-  news_text <- paste(news_text, collapse = ' ')
+  news_text <- xpathSApply(doc_html, "//p", xmlValue)
 
   # Define statistical insights - here are some of the most common
   stat_insights = c("(%)|(percent)|(percentage)|(per cent)|(average)|(bias)|(billion)|(calculate)|
@@ -25,7 +23,7 @@ NewsStat <- function(doc_html) {
                     (thousand)|(trend)|(trillion)|(1)|(2)|(3)|(4)|(5)|(6)|(7)|(8)|(9)|(0)")
 
     # Separate sentences in text
-    sentences <- unlist(strsplit(news_text,split="\\. "))
+    sentences <- unlist(strsplit(news_text, split="\\. "))
 
     sentences[grep(stat_insights, sentences)]
 
