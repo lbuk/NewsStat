@@ -21,7 +21,7 @@ Note: NewsStat requires an R version >= 3.2.3 so you may need to [update R or RS
 ## How do I use it?
 Here is an example use of NewsStat:
 ```
-NewsStat("https://www.theplanner.co.uk/news/%E2%80%98affordable-housing%E2%80%99-on-the-rise-in-london-says-gla")
+NewsStat("https://www.theguardian.com/society/2019/mar/11/empty-homes-england-rises-property")
 ```
 
 ## What can I use NewsStat for?
